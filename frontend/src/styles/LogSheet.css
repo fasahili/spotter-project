@@ -1,0 +1,99 @@
+.logsheet-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: var(--card-bg);
+  padding: 12px;
+  color: var(--text-color);
+}
+
+.logsheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.logsheet-table thead tr {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.logsheet-table th,
+.logsheet-table td {
+  padding: 14px;
+  font-weight: 600;
+}
+
+.logsheet-table tbody tr.even-row {
+  background-color: var(--table-even);
+}
+.logsheet-table tbody tr.odd-row {
+  background-color: var(--table-odd);
+}
+
+.logsheet-table tbody tr:hover {
+  transform: scale(1.02);
+  background: linear-gradient(90deg, #fcd34d, #fbbf24);
+  color: #1f2937;
+}
+
+.logsheet-table td {
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.log-grid {
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  margin: 4px 0;
+  gap: 1px;
+}
+
+.cell {
+  height: 20px;
+  border-radius: 2px;
+}
+
+.cell.driving {
+  background: #007bff;
+}
+
+.cell.onduty {
+  background: #ffc107;
+}
+
+.cell.rest {
+  background: #28a745;
+}
+
+.legend {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.legend .cell {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+.cell.circle {
+  border-radius: 50%;
+}

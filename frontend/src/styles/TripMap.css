@@ -1,0 +1,20 @@
+.trip-map-container {
+  height: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.trip-map-title {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .trip-map-container {
+    height: 300px;
+  }
+}

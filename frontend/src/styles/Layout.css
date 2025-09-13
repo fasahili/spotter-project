@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #1e293b;
+  --card-bg: #273449;
+  --text-color: #f1f5f9;
+  --table-even: #334155;
+  --table-odd: #1e293b;
+  --driving-color: #3b82f6;
+  --onduty-color: #facc15;
+  --rest-color: #10b981;
+  --title-underline: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease;
+  color: var(--text-color);
+}
+
+.section:hover {
+  transform: scale(1.01);
+}
+
+.map-section {
+  position: relative;
+}
+
+.logsheet-table tbody tr.even-row {
+  background-color: var(--table-even);
+}
+
+.logsheet-table tbody tr.odd-row {
+  background-color: var(--table-odd);
+}
+
+.cell.driving {
+  background: var(--driving-color);
+  color: #ffffff;
+}
+
+.cell.onduty {
+  background: var(--onduty-color);
+  color: #000000;
+}
+
+.cell.rest {
+  background: var(--rest-color);
+  color: #ffffff;
+}
+
+.title {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #22b2da, #f0d43a);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.title-underline {
+  color: var(--title-underline);
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--title-underline);
+  padding-bottom: 4px;
+}
+.title-underline-f {
+  color: var(--title-underline);
+  text-align: center;
+  margin-bottom: 12px;
+}
