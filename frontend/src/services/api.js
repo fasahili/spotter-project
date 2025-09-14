@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:8000/api/" });
+const API = axios.create({ baseURL: "https://spotter-project-vzau.onrender.com/api/" });
 
 export const createTrip = (data) => API.post("/trips/", data);
 export const getTrips = () => API.get("/trips/");
