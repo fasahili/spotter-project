@@ -49,7 +49,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://trip-track-blue.vercel.app/",
+    "https://trip-track-blue.vercel.app",
 ]
 
 ROOT_URLCONF = 'backend.urls'
